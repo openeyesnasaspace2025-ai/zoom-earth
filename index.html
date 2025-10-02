@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>OpenSeadragon Demo</title>
+    <script src="openseadragon.min.js"></script>
+    <style>
+        #openseadragon1 {
+            width: 800px;
+            height: 600px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align:center;">Earth Blue Marble</h2>
+    <div id="openseadragon1"></div>
+
+    <script>
+        var viewer = OpenSeadragon({
+            id: "openseadragon1",
+            prefixUrl: "images/",
+            tileSources: {
+                type: 'image',
+                url: "Earth Blue Marble America.jpg"
+            }
+        });
+    </script>
+</body>
+</html>
